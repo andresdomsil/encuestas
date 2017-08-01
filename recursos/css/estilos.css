@@ -1,0 +1,29 @@
+.btn-itslp {
+    color:#fff;
+    background-color:#7d222b;
+    border-color:#7d222b
+}
+.btn-itslp:focus, .btn-itslp.focus {
+    color:#fff;
+    background-color:#9F2528;
+    border-color:#9F2528
+}
+.btn-itslp:hover {
+    color:#fff;
+    background-color:#832022;
+    border-color:#832022
+}
+.noVisible{
+	display: none
+}
+.gif{
+    width: 500px;
+    bottom: 300px;
+    z-index: 1000;
+    position: absolute;
+    margin: 0 33%;
+    display: none;
+}
+.Visible{
+	display: block;
+}
