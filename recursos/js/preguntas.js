@@ -37,7 +37,7 @@ function mostrarlista() {
 						closeOnConfirm: false
 						},
 						function(){
-						location.reload().delay( 5000 );
+						location.reload();
 					});
 				}	 
 	        	
@@ -87,7 +87,7 @@ function mostrarlista() {
 						closeOnConfirm: false
 						},
 						function(){
-						location.reload().delay( 5000 );
+						location.reload();
 					});
 				}	        	
 	        }

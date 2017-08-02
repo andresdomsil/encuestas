@@ -10,10 +10,12 @@ function enviarCorreso(){
 		  closeOnConfirm: false
 		},
 		function(){
+			$("#gif").addClass('Visible');
 		    $.ajax({
 		       	url		:'controllersAjax/ajaxCorreos.php',
 		        success : function(valor){
-                    swal('Envio exitoso','Se han enviado los correos a las personas a encuestar.',"success");
+					swal('Envio exitoso','Se han enviado los correos a las personas a encuestar.',"success");
+					location.reload();
                 }
 		        	
 			});

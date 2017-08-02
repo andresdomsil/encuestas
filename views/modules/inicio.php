@@ -25,6 +25,7 @@ $b = new controllerEncuestado();
 </div>
 <!-- /page header -->
 <div class="page-container">
+	<img src="recursos/images/espera.gif" class="gif" id="gif">
 	<div class="row">
 		<div class="col-lg-4">
 			<!-- Today's revenue -->
