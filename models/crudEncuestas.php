@@ -249,6 +249,16 @@ class Encuestas extends Conexion{
         return $resp;
 	}
 
+	#Detalles de todos los encuestados sobre si realizo encuesta o no
+	#-------------------------------------
+	public function datosDetallesEncuestasModel(){
+
+		$stmt = Conexion::conectar()->prepare("SELECT Encuestas_realizadas.*, Encuestado.nombre nombre, Tipo_encuestado.nombre nom_tipo, Carreras.nombre nom_carr FROM Encuestas_realizadas INNER JOIN Encuestado ON Encuestas_realizadas.idEncuestado=Encuestado.idEncuestado INNER JOIN Tipo_encuestado ON Tipo_encuestado.idTipo_encuestado=Encuestado.idTipo_encuestado INNER JOIN Carreras on Carreras.id_Carrera=Encuestado.id_Carrera");
+		$stmt->execute();
+		$resp = $stmt->fetchALL(PDO::FETCH_ASSOC);
+        return $resp;
+	}
+
 
 }
 

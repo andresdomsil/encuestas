@@ -165,6 +165,12 @@ if(isset($_POST['op'])){
 		$_SESSION['preguntas_vp'] = json_decode($_POST['preguntas_respuestas'], true);
 		echo 1;
 	}
+	if($_POST['op']==9){
+		$obj = new controllerEncuestas();
+		$resp=$obj->datosDetallesEncuestasController();
+		echo json_encode($resp);
+		$obj=null;
+	}
 	
 }
 

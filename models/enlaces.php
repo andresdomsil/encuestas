@@ -20,6 +20,7 @@ class Paginas{
 			$enlaces == "respuestasTablas"		||
 			$enlaces == "respuestasGraficas"	||
 			$enlaces == "prueba"				||
+			$enlaces == "detalles_encuestados"	||
 			$enlaces == "editencuesta"	
 
 		){

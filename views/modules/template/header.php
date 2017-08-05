@@ -89,6 +89,9 @@
 					</a>
 
 					<ul class="dropdown-menu width-200">
+						<li id="p_detalles_encuestados">
+							<a href="index.php?action=detalles_encuestados"><i class="icon-table"></i>Detalles de encuestados</a>
+						</li>
 						<li class="dropdown-header">Tablas</li>
 						<li id="p_respTable">
 							<a href="index.php?action=respuestasTablas"><i class="icon-table"></i>Respuestas en Tablas</a>

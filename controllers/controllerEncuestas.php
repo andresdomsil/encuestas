@@ -147,4 +147,9 @@ class controllerEncuestas{
 		return $resp;
 	}
 
+	public function datosDetallesEncuestasController(){
+		$resp=Encuestas::datosDetallesEncuestasModel();
+		return $resp;
+	}
+
 }
